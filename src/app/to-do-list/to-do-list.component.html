@@ -1,0 +1,8 @@
+<div class="d-flex p-3 flex-wrap w-100 ">
+    <h1 class="w-100">Let's do something!</h1>
+    <div class="w-100 p-5">
+    @for (RItem of items ; track $index) {
+        <app-to-do-item (RemoveMe)="removeItem($event)" [item]=RItem></app-to-do-item>
+     }
+    </div>
+</div>
